@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('v1/articles', ArticleController::class)
     ->only(['index', 'show']);
+    
 Route::apiResource('v1', IndexController::class)
     ->only('index');
 

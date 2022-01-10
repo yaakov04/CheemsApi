@@ -11,6 +11,7 @@ if (!function_exists('getArticles')) {
             $object = new $newsPaper['className'];
             $articlesArray = $object->getArticles($newsPaper['uri']);
             foreach ($articlesArray as $article) {
+                $article['newspaper']=$newsPaper['name'];
                 $articles[]=$article;
             }
         }
