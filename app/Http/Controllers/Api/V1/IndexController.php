@@ -17,7 +17,10 @@ class IndexController extends Controller
         return response()->json([
             'data'=>[
                 route('v1.index'),
-                route('articles.index')
+                route('articles.index'),
+                route('articles.index')."/{article}",
+                route('newspapers.index'),
+                route('newspapers.index')."/{newspaper}",
             ]
         ]);
     }
