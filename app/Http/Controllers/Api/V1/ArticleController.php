@@ -16,7 +16,12 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return new ArticleResource(Article::all());
+        return new ArticleResource(Article::latest()->paginate());
+    }
+
+    public function show(Article $article)
+    {
+        return new ArticleResource($article);
     }
 
 }
