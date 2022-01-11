@@ -21,13 +21,13 @@
                 <h2 class="request__header">¡Haz una consulta!</h2>
                 <form class="form">
                     <label class="form__label" for="endpoint">{{ route('v1.index')}}</label>
-                    <input class="form__input" type="text" value="/newspapers/1">
-                    <button class="form__btn" type="submit">Consultar</button>
+                    <input id="input" class="form__input" type="text" value="/newspapers/1">
+                    <button id="btn_request" class="form__btn" type="submit">Consultar</button>
                 </form>
             </div>
             <article class="container response">
                 <h3 class="response__header">Respuesta:</h3>
-                <div class="response__body response__body-center">
+                <div id="response" class="response__body response__body-center">
                     <p>No se ha hecho ninguna consulta</p>
                 </div>
             </article>
