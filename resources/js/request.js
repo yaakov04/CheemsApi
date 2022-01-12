@@ -16,8 +16,9 @@ const request = async(e) => {
     const input = document.querySelector('#input')
     const response = document.querySelector('#response')
     response.innerHTML=`
-        <div class="loader">
-        <div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
     `
     if (!input.value) {
         alert('El campo no puede ir vacio')

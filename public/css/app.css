@@ -82,6 +82,7 @@ pre{
     background-color: rgb(199, 199, 199);
     border-radius: .313rem;
     padding: .625rem;
+    overflow-x: auto;
 }
 
 .info-api {
@@ -92,6 +93,11 @@ pre{
     margin-bottom: 0.875rem;
 }
 
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .loader {
     border: 16px solid #f3f3f3;

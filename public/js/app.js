@@ -2183,7 +2183,7 @@ var request = /*#__PURE__*/function () {
             e.preventDefault();
             input = document.querySelector('#input');
             response = document.querySelector('#response');
-            response.innerHTML = "\n        <div class=\"loader\">\n        <div>\n    ";
+            response.innerHTML = "\n    <div class=\"loader-container\">\n        <div class=\"loader\"></div>\n    </div>\n    ";
 
             if (input.value) {
               _context2.next = 7;
